@@ -1,11 +1,8 @@
 import * as model from "./model";
 import * as view from "./view";
 
-const init = () => {
-    console.log('Controller works!');
-    view.displayBooks();
-};
+const init = () => view.displayBooks();
 
-const getBooks = () => model.books;
+const getBooks = () =>  model.getBooks();
 
 export {init, getBooks}

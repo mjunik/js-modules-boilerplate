@@ -6,3 +6,4 @@ This app is a boilerplate for JS application based on ES6 modules, MVC pattern a
 - `npm start` - run the app in the dev mode
 - `npm run build` - build the app
 - `npm test` - run tests
+- `npm run server` - run a json-http server

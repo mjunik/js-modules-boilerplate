@@ -1,19 +1,10 @@
-const books = [
-    {
-        id: 1,
-        title: "To Kill a Mockingbird",
-        author: "Harper Lee"
-    },
-    {
-        id: 2,
-        title: "The Great Gatsby",
-        author: "F. Scott Fitzgerald"
-    },
-    {
-        id: 3,
-        title: "Harry Potter and the Sorcerer's Stone",
-        author: "J.K. Rowling"
-    }
-];
+let books = [];
 
-export {books}
+const getBooks = () => {
+    return fetch('http://localhost:3000/books')
+        .then(res => res.json())
+        .then(json => books = json)
+        .catch(err => console.log('Error while fetching data ', err));
+};
+
+export {getBooks}
